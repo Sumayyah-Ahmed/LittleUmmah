@@ -1,62 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Arial, sans-serif;
-}
-:root {
-  --bg-color-light: white;
-  --text-color-light: black;
-  --bg-color-dark: black;
-  --text-color-dark: white;
-}
 
 body {
-  background-color: var(--bg-color-light);
-  color: var(--text-color-light);
-  transition: 0.3s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: 0.3s ease-in-out;
+    padding-top: 60px; /* Space for the fixed toggle button */
+}
+
+:root {
+    --bg-color-light: white;
+    --text-color-light: black;
+    --bg-color-dark: black;
+    --text-color-dark: white;
 }
 
 .dark-mode {
-  background-color: var(--bg-color-dark);
-  color: var(--text-color-dark);
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
 }
+
 /* Position the toggle button at the top-right corner */
 .toggle-btn {
-    position: fixed; 
-    top: 20px;      
-    right: 20px;     
-    background-color: #1a1a1a; 
-    color: white;    
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #1a1a1a;
+    color: white;
     padding: 10px 30px;
-    border: none;    
-    border-radius: 50px; 
-    font-size: 16px;  
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
     cursor: pointer;
     z-index: 1000;
     transition: 0.4s ease;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.562);
-
 }
+
 .toggle-btn:hover {
-    background: linear-gradient(45deg, rgb(0, 234, 255), #1900ff); 
+    background: linear-gradient(45deg, rgb(0, 234, 255), #1900ff);
 }
 
-.navbar{
+/* Navbar Styling */
+.navbar {
     background: #1a1a1a;
-    padding: 20px, 40px;
+    padding: 20px 40px;
     border-radius: 50px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.562);
     display: flex;
     gap: 30px;
+    margin: 0 auto; /* Center the navbar */
+    max-width: 90%; /* Limit the width of the navbar */
 }
-.navbar a{
+
+/* Navbar Links */
+.navbar a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -65,7 +71,8 @@ body {
     transition: 0.4s;
     overflow: hidden;
 }
-.navbar a::before{
+
+.navbar a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -80,10 +87,12 @@ body {
     filter: blur(10px);
     opacity: 0.6;
 }
-.navbar a:hover::before{
+
+.navbar a:hover::before {
     transform: scale(1);
 }
-.navbar a::after{
+
+.navbar a::after {
     content: '';
     position: absolute;
     bottom: 5px;
@@ -94,7 +103,52 @@ body {
     background: cyan;
     transition: width 0.4s ease;
 }
-.navbar a:hover::after{
+
+.navbar a:hover::after {
     width: 70%;
+}
+
+/* Paragraph Styling */
+.paragraph {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    width: 80%; /* Optional: Set a max width for the paragraph */
+    margin-top: 30px; /* Adds space between the navbar and the paragraph */
+    margin-left: auto;
+    margin-right: auto;
+}
+.clear {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+footer {
+    background: #1a1a1a; /* Same as navbar background */
+    padding: 7px 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.562);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /* Adds space between content and footer */
+    margin-bottom: 30px; /* Adds space at the bottom */
+}
+footer .studio {
+    
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+footer a:hover {
+    color:  rgba(0, 255, 255, 0.562);
 }
 
