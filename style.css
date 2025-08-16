@@ -15,7 +15,6 @@ body {
     transition: 0.3s ease-in-out;
     padding-top: 60px; /* Space for the fixed toggle button */
 }
-
 :root {
     --bg-color-light: white;
     --text-color-light: black;
