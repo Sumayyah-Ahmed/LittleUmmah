@@ -23,5 +23,5 @@ https://sumayyah-ahmed.github.io/LittleUmmah/
 Author
 Sumayyah Ahmed — Creative Technologist & Developer
 
-![Little Ummah Website Screenshot](images/homepagepage.png)<br>
+![Little Ummah Website Screenshot](images/homepage.png)<br>
 ![Little Ummah Website Screenshot](images/aboutpage.png)<br>
