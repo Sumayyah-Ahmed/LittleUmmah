@@ -1,7 +1,7 @@
 # Little Ummah 
 A simple kids’ clothing and accessories website featuring soft colors, clean layout, and easy browsing.
 
-Features
+# Features
 Kids clothing and accessories showcase
 
 Responsive layout for all devices
@@ -10,18 +10,18 @@ Lightweight, clean UI
 
 Work‑in‑progress product sections
 
-Tech Stack
+# Tech Stack
 HTML
 
 CSS
 
 JavaScript
 
-Live Demo
+# Live Demo
 https://sumayyah-ahmed.github.io/LittleUmmah/
 
-Author
+# Author
 Sumayyah Ahmed — Creative Technologist & Developer
 
 ![Little Ummah Website Screenshot](images/homepage.png)<br><br>
-![Little Ummah Website Screenshot](images/aboutpage.png)<br>
+![Little Ummah Website Screenshot](images/aboutpage.png)<br><br>
